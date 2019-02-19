@@ -1,5 +1,6 @@
 Ciphers
   Rail Fence Cipher http://practicalcryptography.com/ciphers/classical-era/rail-fence/
+                    https://crypto.interactive-maths.com/rail-fence-cipher.html
   Baconian Cipher http://practicalcryptography.com/ciphers/classical-era/baconian/
 
 Page Tree
