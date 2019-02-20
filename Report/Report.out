@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Formatting}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{LineBreaks}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Maths}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Code Listing}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{PseudoCode}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Conclusion}{}% 7
+\BOOKMARK [1][-]{section.2}{Software Design}{}% 2
+\BOOKMARK [1][-]{section.3}{Implementation}{}% 3
+\BOOKMARK [1][-]{section.4}{Evaluation}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{comparison Against the Requirements}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Improvements}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{Personal Evaluation}{}% 7
