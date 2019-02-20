@@ -1,15 +1,16 @@
-body {background-color:#e9f0f8}
+body {background-color:#e9f0f8;}
 
-#EncipherTitle {color:#000913}
+#EncipherTitle {color:#000913;}
 
 #RailFenceTitle {color:#000913;}
-#RailFenceLink {text-decoration: none}
+#RailFenceLink {text-decoration: none;}
+#RailFenceLink:link{color:#000913;}
 #RailFenceLink:hover{background-color:#cad4de;}
 #RailFenceLink:visited{color:#000913;}
 #RailFenceParagraph {color:#000913}
 
-#BaconianTitle {color:#000913}
-#BaconianLink {text-decoration: none}
+#BaconianTitle {color:#000913;}
+#BaconianLink {text-decoration: none;}
 #BaconianLink:hover{background-color:#cad4de;}
 #BaconianLink:visited{color:#000913;}
 #BaconianParagraph {color:#000913}
