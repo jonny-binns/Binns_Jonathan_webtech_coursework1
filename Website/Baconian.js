@@ -225,6 +225,39 @@ function encode(){
     }
     finally
     {
-        document.getElementById("output").innerHTML = output;
+        document.getElementById("encoded_output").innerHTML = output;
     }
+}
+
+function decode(){
+  var input = document.getElementById("message").value;
+  //var input_split = input.match(/.{1,5}/g);
+  var number_of_words = input.length/5;
+  var input_split = input.split(number_of_words);
+  var output = "";
+
+  try
+  {
+     for (var i = 0; i < number_of_words; i++)
+     {
+       if(input_split[i] == "aaaaa")
+       {
+           output = output + "a";
+           i++;
+       }
+       if(input_split[i] == "aaaab")
+       {
+           output = output + "b";
+           i++;
+       }
+     }
+  }
+  catch
+  {
+      alert("Error: unknown character");
+  }
+  finally
+  {
+      document.getElementById("encoded_output").innerHTML = output;
+  }
 }
