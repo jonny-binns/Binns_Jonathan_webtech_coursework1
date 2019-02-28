@@ -231,26 +231,28 @@ function encode(){
 
 function decode(){
   var input = document.getElementById("message").value;
-  //var input_split = input.match(/.{1,5}/g);
-  var number_of_words = input.length/5;
-  var input_split = input.split(number_of_words);
+  var input_alphanumeric = input.replace(/[^0-9a-z]/gi, '');
+  var input_array = input_alphanumeric.match(/.{1,5}/g);
+  var input_array_length = input_array.length;
   var output = "";
 
   try
   {
-     for (var i = 0; i < number_of_words; i++)
-     {
-       if(input_split[i] == "aaaaa")
-       {
-           output = output + "a";
-           i++;
-       }
-       if(input_split[i] == "aaaab")
-       {
-           output = output + "b";
-           i++;
-       }
-     }
+      for (var i = 0; i < input_array_length; i++)
+      {
+        if(input_array[i] == "aaaaa")
+        {
+            output = output + "a";
+        }
+        else if(input_array[i] == "aaaab")
+        {
+            output = output + "b";
+        }
+        else
+        {
+            output = input_array;
+        }
+      }
   }
   catch
   {
