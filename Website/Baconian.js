@@ -215,17 +215,14 @@ function encode(){
           }
           else
           {
-              output = output + input.charAt(i);
+              throw "Unknown Character";
           }
       }
+      document.getElementById("encoded_output").innerHTML = output;
     }
-    catch
+    catch(err)
     {
-        alert("Error: unknown character");
-    }
-    finally
-    {
-        document.getElementById("encoded_output").innerHTML = output;
+        alert("Error: " + err);
     }
 }
 
@@ -248,18 +245,216 @@ function decode(){
         {
             output = output + "b";
         }
+        else if(input_array[i] == "aaaba")
+        {
+            output = output + "c";
+        }
+        else if(input_array[i] == "aaabb")
+        {
+            output = output + "d";
+        }
+        else if(input_array[i] == "aabaa")
+        {
+            output = output + "e";
+        }
+        else if(input_array[i] == "aabab")
+        {
+            output = output + "f";
+        }
+        else if(input_array[i] == "aabba")
+        {
+            output = output + "g";
+        }
+        else if(input_array[i] == "aabbb")
+        {
+            output = output + "h";
+        }
+        else if(input_array[i] == "abaaa")
+        {
+            output = output + "i";
+        }
+        else if(input_array[i] == "abaab")
+        {
+            output = output + "j";
+        }
+        else if(input_array[i] == "ababa")
+        {
+            output = output + "k";
+        }
+        else if(input_array[i] == "ababb")
+        {
+            output = output + "l";
+        }
+        else if(input_array[i] == "abbaa")
+        {
+            output = output + "m";
+        }
+        else if(input_array[i] == "abbab")
+        {
+            output = output + "n";
+        }
+        else if(input_array[i] == "abbba")
+        {
+            output = output + "o";
+        }
+        else if(input_array[i] == "abbbb")
+        {
+            output = output + "p";
+        }
+        else if(input_array[i] == "baaaa")
+        {
+            output = output + "q";
+        }
+        else if(input_array[i] == "baaab")
+        {
+            output = output + "r";
+        }
+        else if(input_array[i] == "baaba")
+        {
+            output = output + "s";
+        }
+        else if(input_array[i] == "baabb")
+        {
+            output = output + "t";
+        }
+        else if(input_array[i] == "babaa")
+        {
+            output = output + "u";
+        }
+        else if(input_array[i] == "babab")
+        {
+            output = output + "v";
+        }
+        else if(input_array[i] == "babba")
+        {
+            output = output + "w";
+        }
+        else if(input_array[i] == "babbb")
+        {
+            output = output + "x";
+        }
+        else if(input_array[i] == "bbaaa")
+        {
+            output = output + "y";
+        }
+        else if(input_array[i] == "bbaab")
+        {
+            output = output + "z";
+        }
+        else if(input_array[i] == "AAAAA")
+        {
+            output = output + "A";
+        }
+        else if(input_array[i] == "AAAAB")
+        {
+            output = output + "B";
+        }
+        else if(input_array[i] == "AAABA")
+        {
+            output = output + "C";
+        }
+        else if(input_array[i] == "AAABB")
+        {
+            output = output + "D";
+        }
+        else if(input_array[i] == "AABAA")
+        {
+            output = output + "E";
+        }
+        else if(input_array[i] == "AABAB")
+        {
+          output = output + "F";
+        }
+        else if(input_array[i] == "AABBA")
+        {
+            output = output + "G";
+        }
+        else if(input_array[i] == "AABBB")
+        {
+            output = output + "H";
+        }
+        else if(input_array[i] == "ABAAA")
+        {
+            output = output + "I";
+        }
+        else if(input_array[i] == "ABAAB")
+        {
+            output = output + "J";
+        }
+        else if(input_array[i] == "ABABA")
+        {
+            output = output + "K";
+        }
+        else if(input_array[i] == "ABABB")
+        {
+            output = output + "L";
+        }
+        else if(input_array[i] == "ABBAA")
+        {
+            output = output + "M";
+        }
+        else if(input_array[i] == "ABBAB")
+        {
+            output = output + "N";
+        }
+        else if(input_array[i] == "ABBBA")
+        {
+            output = output + "O";
+        }
+        else if(input_array[i] == "ABBBB")
+        {
+            output = output + "P";
+        }
+        else if(input_array[i] == "BAAAA")
+        {
+            output = output + "Q";
+        }
+        else if(input_array[i] == "BAAAB")
+        {
+            output = output + "R";
+        }
+        else if(input_array[i] == "BAABA")
+        {
+            output = output + "S";
+        }
+        else if(input_array[i] == "BAABB")
+        {
+            output = output + "T";
+        }
+        else if(input_array[i] == "BABAA")
+        {
+            output = output + "U";
+        }
+        else if(input_array[i] == "BABAB")
+        {
+            output = output + "V";
+        }
+        else if(input_array[i] == "BABBA")
+        {
+            output = output + "W";
+        }
+        else if(input_array[i] == "BABBB")
+        {
+            output = output + "X";
+        }
+        else if(input_array[i] == "BBAAA")
+        {
+            output = output + "Y";
+        }
+        else if(input_array[i] == "BBAAB")
+        {
+            output = output + "Z";
+        }
         else
         {
-            output = input_array;
+            throw "Unknown code";
         }
       }
-  }
-  catch
-  {
-      alert("Error: unknown character");
-  }
-  finally
-  {
+
       document.getElementById("encoded_output").innerHTML = output;
+  }
+  catch(err)
+  {
+      alert("Error: " + err);
   }
 }
