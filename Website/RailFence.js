@@ -60,13 +60,42 @@ function decode()
         }
     }
 
-    for(i=0; i<input.length/3; i++)
+    var input1_null = "";
+    for(i = 0; i<input1.length; i++)
     {
-        output = output + input1.charAt(i);
-        output = output + input2.charAt(i);
-        output = output + input3.charAt(i);
-        output = output + input2.charAt(i+1);
+        if(input1.charAt(i) != null)
+        {
+            input1_null += input1.charAt(i) + "...";
+        }
     }
+    input1 = input1_null.substring(0, input.length);
+
+    var input2_null = ".";
+    for(i = 0; i<input2.length; i++)
+    {
+        if(input2.charAt(i) != null)
+        {
+            input2_null += input2.charAt(i) + ".";
+        }
+    }
+    input2 = input2_null.substring(0, input.length);
+
+    var input3_null = "..";
+    for(i = 0; i<input3.length; i++)
+    {
+        if(input3.charAt(i) != null)
+        {
+            input3_null += input3.charAt(i) + "...";
+        }
+    }
+    input3 = input3_null.substring(0, input.length);
+
+    for(i=0; i<input.length; i++)
+    {
+      output = output + input1.charAt(i) + input2.charAt(i) + input3.charAt(i);
+    }
+
+    output = output.replace(/[^0-9a-z]/gi, '');
 
     document.getElementById("output").innerHTML = output;
 
