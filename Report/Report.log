@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.19)  2 MAR 2019 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.19)  4 MAR 2019 15:04
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -775,47 +775,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <12> not available
-(Font)              Font shape `T1/ua1/b/n' tried instead on input line 103.
-No file Report.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
 <./images/logo.png, id=31, 250.9375pt x 63.23625pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
-Package pdftex.def Info: ./images/logo.png  used on input line 115.
+Package pdftex.def Info: ./images/logo.png  used on input line 99.
 (pdftex.def)             Requested size: 200.75026pt x 50.58905pt.
 [1
 
 
 {C:/Users/Jonnys Mac/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./imag
 es/logo.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <12> not available
+(Font)              Font shape `T1/ua1/b/n' tried instead on input line 105.
+
+No file Report.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
  (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 7B3C833B82632A62D982FECFD4F5BD86;397.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 19824 strings out of 492946
- 340818 string characters out of 3124044
- 713434 words of memory out of 3000000
+ 19825 strings out of 492946
+ 340824 string characters out of 3124044
+ 715434 words of memory out of 3000000
  23542 multiletter control sequences out of 15000+200000
  589673 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,63p,1849b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,63p,1849b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Jonnys Mac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Users/Jonnys Mac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/ar
 ial/ua1b8a.pfb><C:/Users/Jonnys Mac/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/arial/ua1r8a.pfb>
-Output written on Report.pdf (1 page, 27946 bytes).
+Output written on Report.pdf (2 pages, 30029 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
  62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
