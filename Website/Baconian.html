@@ -1,38 +1,47 @@
 <html>
     <head>
           <link rel="stylesheet" type="text/css" href="Baconian.css">
-          <title>Baconian Cipher</title>
+          <title>Bacon's Cipher</title>
     </head>
     <body>
-          <h1>A Baconaian Cipher Encoder</h1>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-             velit esse molestie consequat, vel illum dolore eu feugiat nulla
-             facilisis at vero eros et accumsan et iusto odio dignissim qui
-             blandit praesent luptatum zzril delenit augue duis dolore te
-             feugait nulla facilisi.Epsum factorial non deposit quid pro quo hic
-              escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
-              Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est
-              igpay atinlay. Marquee selectus non provisio incongruous feline
-              nolo contendre. Gratuitous octopus niacin, sodium glutimate.
-              Quote meon an estimate et non</p>
+          <h1>A Bacon's Cipher Encoder</h1>
 
           <div id="input_area">
-              <textarea rows="1" cols="50" autofocus id="message"> please enter your message</textarea>
+              <textarea rows="1" cols="50" autofocus id="message">Please enter your message</textarea>
+              <div id="buttons">
               <button type="button" onclick="encode(message)" id ="encode_button">Encode</button>
               <button type="button" onclick="decode(message)" id ="decode_button">Decode</button>
+              </div>
           </div>
 
-          <div id="encoded_output_area">
-              <p>
-                This is your encoded message<br />
-                <div id="encoded_output"></div>
-              </p>
-          <div>
+          <div id="enciphered_output">
+              <p>This is your encoded message</p>
+              <textarea rows="1" cols="50" autofocus id="EncipheredTextBox">Enciphered Text</textarea>
+          </div>
+
+          <div id="deciphered_output">
+              <p>This is your decoded message</p>
+              <textarea rows="1" cols="50" autofocus id="DecipheredTextBox">Deciphered Text</textarea>
+          </div>
+
             <script type="text/javascript" src="Baconian.js"></script>
+
+            <p>
+              The Baconian cipher is named after its inventor, Sir Francis Bacon.
+              The Baconian cipher is a substitution cipher in which each letter
+              is replaced by a sequence of 5 characters. In the original cipher,
+              these were sequences of 'A's and 'B's e.g. the letter 'D' was
+              replaced by 'aaabb', the letter 'O' was replaced by 'abbab' etc.
+
+              This cipher offers very little communication security, as it is a
+              substitution cipher. As such all the methods used to cryptanalyse
+              substitution ciphers can be used to break Baconian ciphers. The
+               main advantage of the cipher is that it allows hiding the fact that
+                a secret message has been sent at all.
+
+                <br/>
+                Taken from: <a id="PracticalCryptographyLink"href="http://practicalcryptography.com/ciphers/classical-era/baconian/">Pracical Cryptography</a>
+            </p>
 
             <a href="index.html"><img src="images/home.png" width="20" height="20"/></a>
             <h4 id="BaconianTitle"><a id="RailFenceLink"href="RailFence.html">Rail Fence Cipher </a></h4>

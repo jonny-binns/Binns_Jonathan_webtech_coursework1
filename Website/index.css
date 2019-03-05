@@ -1,16 +1,25 @@
-body {background-color:#e9f0f8;}
+body
+{
+background-color:#f5f5f5;
+color: #100c08;
+font-family: Helvetica, sans-serif;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+}
 
-#EncipherTitle {color:#000913;}
 
-#RailFenceTitle {color:#000913;}
 #RailFenceLink {text-decoration: none;}
-#RailFenceLink:link{color:#000913;}
-#RailFenceLink:hover{background-color:#cad4de;}
-#RailFenceLink:visited{color:#000913;}
-#RailFenceParagraph {color:#000913}
+#RailFenceLink:link {color: #100c08;}
+#RailFenceLink:hover{background-color:#808080;}
+#RailFenceLink:visited{color:#100c08;}
 
-#BaconianTitle {color:#000913;}
 #BaconianLink {text-decoration: none;}
-#BaconianLink:hover{background-color:#cad4de;}
-#BaconianLink:visited{color:#000913;}
-#BaconianParagraph {color:#000913}
+#BaconianLink:link {color: #100c08;}
+#BaconianLink:hover{background-color:#808080;}
+#BaconianLink:visited{color:#100c08;}
+
+#PracticalCryptographyLink {text-decoration: none;}
+#PracticalCryptographyLink:link {color: #100c08;}
+#PracticalCryptographyLink:hover{background-color:#808080;}
+#PracticalCryptographyLink:visited{color:#100c08;}

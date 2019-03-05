@@ -218,7 +218,7 @@ function encode(){
               throw "Unknown Character";
           }
       }
-      document.getElementById("encoded_output").innerHTML = output;
+      document.getElementById("EncipheredTextBox").innerHTML = output;
     }
     catch(err)
     {
@@ -451,7 +451,8 @@ function decode(){
         }
       }
 
-      document.getElementById("encoded_output").innerHTML = output;
+      document.getElementById("DecipheredTextBox").innerHTML = output;
+      //document.getElementById("encoded_output").innerHTML = output;
   }
   catch(err)
   {

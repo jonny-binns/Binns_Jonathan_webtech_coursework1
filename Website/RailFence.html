@@ -5,36 +5,54 @@
     </head>
     <body>
           <h1>A Rail Fence Cipher Encoder</h1>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-             velit esse molestie consequat, vel illum dolore eu feugiat nulla
-             facilisis at vero eros et accumsan et iusto odio dignissim qui
-             blandit praesent luptatum zzril delenit augue duis dolore te
-             feugait nulla facilisi.Epsum factorial non deposit quid pro quo hic
-              escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
-              Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est
-              igpay atinlay. Marquee selectus non provisio incongruous feline
-              nolo contendre. Gratuitous octopus niacin, sodium glutimate.
-              Quote meon an estimate et non</p>
 
           <div id="input_area">
               <textarea rows="1" cols="50" autofocus id="message"> please enter your message</textarea>
+              <div id="buttons">
               <button type="button" onclick="encode(message)" id ="encode_button">Encode</button>
               <button type="button" onclick="decode(message)" id ="decode_button">Decode</button>
+              <button type="button" onclick="ShowGrid(message)" id ="show_grid_button">Show Grid</button>
+            </div>
           </div>
 
-          <div if="output_area">
-              <p>
-                This is your encoded message<br />
-                <div id="output"></div>
-              </p>
-          <div>
+          <div id="enciphered_output">
+              <p>This is your encoded message</p>
+              <textarea rows="1" cols="50" autofocus id="EncipheredTextBox">Enciphered Text</textarea>
+          </div>
+
+          <div id="enciphered_output_grid">
+              <p>This is the grid displaying the message</p>
+              <textarea rows="3" cols="50" autofocus id="GridTextBox">Show Grid</textarea>
+          </div>
+
+          <div id="deciphered_output">
+              <p>This is your decoded message</p>
+              <textarea rows="1" cols="50" autofocus id="DecipheredTextBox">Deciphered Text</textarea>
+          </div>
+
+
             <script type="text/javascript" src="RailFence.js"></script>
 
-          <a href="index.html"><img src="images/home.png" width="20" height="20"/></a>
-          <h4 id="BaconianTitle"><a id="BaconianLink"href="Baconian.html">Baconian Cipher </a></h4>
+            <p>
+                The railfence cipher is a very simple, easy to crack cipher. It is
+                a transposition cipher that follows a simple rule for mixing up the
+                characters in the plaintext to form the ciphertext. The railfence
+                cipher offers essentially no communication security, and it will be
+                shown that it can be easily broken even by hand.
+
+
+                Although weak on its own, it can be combined with other ciphers,
+                such as a substitution cipher, the combination of which is more
+                difficult to break than either cipher on it's own.
+
+                Many websites claim that the rail-fence cipher is a simpler "write
+                down the columns, read along the rows" cipher. This is equivalent
+                to using an un-keyed columnar transposition cipher.
+                <br/>
+                Taken from: <a id="PracticalCryptographyLink"href="http://practicalcryptography.com/ciphers/rail-fence-cipher/">Pracical Cryptography</a>
+              </p>
+
+          <a  id = " HomeButtonLink" href="index.html"><img src="images/home.png" width="20" height="20"/></a>
+          <h4 id="BaconianTitle"><a id="BaconianLink"href="Baconian.html">Bacon's Cipher </a></h4>
     </body>
 </html>

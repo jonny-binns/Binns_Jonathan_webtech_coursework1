@@ -1,5 +1,26 @@
-textarea{
+body
+{
+background-color:#f5f5f5;
+color: #100c08;
+font-family: Helvetica, sans-serif;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+textarea
+{
         border:1px solid #999999;
         width:90%;
         margin:5px 0;
 }
+
+#BaconianLink {text-decoration: none;}
+#BaconianLink:link {color: #100c08;}
+#BaconianLink:hover{background-color:#808080;}
+#BaconianLink:visited{color:#100c08;}
+
+#PracticalCryptographyLink {text-decoration: none;}
+#PracticalCryptographyLink:link {color: #100c08;}
+#PracticalCryptographyLink:hover{background-color:#808080;}
+#PracticalCryptographyLink:visited{color:#100c08;}
