@@ -452,7 +452,6 @@ function decode(){
       }
 
       document.getElementById("DecipheredTextBox").innerHTML = output;
-      //document.getElementById("encoded_output").innerHTML = output;
   }
   catch(err)
   {

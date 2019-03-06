@@ -29,8 +29,8 @@ function encode()
     }
     finally
     {
-        //document.getElementById("output").innerHTML = output1 + output2 + output3;
-        document.getElementById("EncipheredTextBox").innerHTML = output1 + output2 + output3;
+        output = output1 + output2 + output3;
+        document.getElementById("EncipheredTextBox").innerHTML = output;
     }
 }
 
