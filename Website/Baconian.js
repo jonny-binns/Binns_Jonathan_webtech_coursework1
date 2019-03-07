@@ -1,10 +1,16 @@
 function encode(){
+    //takes in text from the text box and sets it equal to input
     var input = document.getElementById("message").value;
+    //removes any non alphabetical entered
+    input = input.replace(/[^a-z]/gi, '');
+    //creates the output string
     var output = "";
     try
     {
+      //loops through the code
       for (var i = 0; i < input.length; i++)
       {
+          //adds the 5 letter code for each alphabetical letter to the output string
           if(input.charAt(i) == "a")
           {
               output = output + "aaaaa";
@@ -215,28 +221,40 @@ function encode(){
           }
           else
           {
+              //if the character isnt in the alphabet throws an error
               throw "Unknown Character";
           }
       }
+      //prints output to the correct text box
       document.getElementById("EncipheredTextBox").innerHTML = output;
     }
+    //catches any errors thrown
     catch(err)
     {
+        //shows any errors thrown as an alert
         alert("Error: " + err);
     }
 }
 
+
 function decode(){
+  //takes the text from the text box and sets it equal to input
   var input = document.getElementById("message").value;
-  var input_alphanumeric = input.replace(/[^0-9a-z]/gi, '');
+  //removes any non alphabetical characters
+  var input_alphanumeric = input.replace(/[^a-z]/gi, '');
+  //splits input_alphanumeric to an array of 5 character strings
   var input_array = input_alphanumeric.match(/.{1,5}/g);
+  //calculates the length of the array
   var input_array_length = input_array.length;
+  //creates the output string
   var output = "";
 
   try
   {
+      //loops through the array of 5 letter codes
       for (var i = 0; i < input_array_length; i++)
       {
+        //adds the corresponding letter of the alphabet to the output string
         if(input_array[i] == "aaaaa")
         {
             output = output + "a";
@@ -447,14 +465,17 @@ function decode(){
         }
         else
         {
-            throw "Unknown code";
+            //throws error if the character code isnt recognised
+            throw "Unknown character";
         }
       }
-
+      //shows output character in the correct text box
       document.getElementById("DecipheredTextBox").innerHTML = output;
   }
+  //catches any errors thrown
   catch(err)
   {
+      //shows any errors as an alert
       alert("Error: " + err);
   }
 }
